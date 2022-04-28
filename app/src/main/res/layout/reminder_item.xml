@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:contentPadding="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout"
+            android:layout_width="130dp"
+            android:layout_height="130dp">
+
+            <TextView
+                android:id="@+id/reminderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:text="Check Shopping List"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/reminderTitle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/reminderDate"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:padding="5dp"
+                android:text="Today"
+                app:layout_constraintBottom_toBottomOf="@+id/constraint_layout"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

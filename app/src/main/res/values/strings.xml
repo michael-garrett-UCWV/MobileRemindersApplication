@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MobileRemindersApplication</string>
+    <string name="title_home">Reminders</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Settings</string>
+    <string name="submit">Submit</string>
+</resources>
